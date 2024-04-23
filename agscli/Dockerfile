@@ -31,6 +31,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
         python3-kerberos \
         gcc \
         libkrb5-dev \
+        net-tools \
         wget \
         python3-pip && \
     rm -rf /var/lib/apt/lists/* && \
