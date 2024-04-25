@@ -46,7 +46,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
     pip install -r /app/requirements.txt && \
     # pip install -U pyinstaller && \
 # Modify idsid in test.sh file
-    sed -i '1c\kinit mmierzex@GER.CORP.INTEL.COM' ${APP_DIR}/test.sh && \
+    sed -i '2c\kinit mmierzex@GER.CORP.INTEL.COM' ${APP_DIR}/test.sh && \
 # Alias
     echo 'alias ags="python3 ${APP_DIR}/ags"' >> ~/.bashrc && \
     echo 'alias test="bash ${APP_DIR}/test.sh"' >> ~/.bashrc && \
