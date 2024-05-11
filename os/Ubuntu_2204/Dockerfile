@@ -14,7 +14,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
         gcc && \
 
 # Cleaning
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* \
 
 # Intel proxy
 # ENV http_proxy=http://proxy-dmz.intel.com:911
