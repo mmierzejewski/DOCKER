@@ -11,6 +11,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
         nano \
         dnsutils \
         wget \
+        mc \
         gcc && \
 
 # Cleaning
