@@ -14,7 +14,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 COPY applications.productivity.ags-cli.cli ${APP_DIR}
 
 # File to log in to AD and testing connection with certificate centrum: https://login.swiss.intel.com
-COPY --chmod=755 test.sh ${APP_DIR}
+COPY --chmod=755 mmierzex.sh ${APP_DIR}
 
 # Kerberos and python components
 RUN apt-get -yqq update && apt-get -yqq upgrade && \
@@ -45,8 +45,6 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
     pip install --upgrade pip && \
     pip install -r /app/requirements.txt && \
     # pip install -U pyinstaller && \
-# Modify idsid in test.sh file
-    sed -i '2c\kinit mmierzex@GER.CORP.INTEL.COM' ${APP_DIR}/test.sh && \
 # Alias
     echo 'alias ags="python3 ${APP_DIR}/ags"' >> ~/.bashrc && \
     echo 'alias test="bash ${APP_DIR}/test.sh"' >> ~/.bashrc && \
