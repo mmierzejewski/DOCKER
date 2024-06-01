@@ -47,7 +47,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
     # pip install -U pyinstaller && \
 # Alias
     echo 'alias ags="python3 ${APP_DIR}/ags"' >> ~/.bashrc && \
-    echo 'alias test="bash ${APP_DIR}/test.sh"' >> ~/.bashrc && \
+    echo 'alias mmierzex="bash ${APP_DIR}/mmierzex.sh"' >> ~/.bashrc && \
     echo 'alias lsa="la -al"' >> ~/.bashrc
 
 # Work directory
