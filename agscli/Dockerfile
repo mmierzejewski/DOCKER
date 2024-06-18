@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     APP_DIR=/app \
     EC_SITE=igk \
 # Intel proxy
-    http_proxy=http://proxy-dmz.intel.com:911 \
+    http_proxy=http://proxy-dmz.intel.com:912 \
     https_proxy=http://proxy-dmz.intel.com:912 \
     no_proxy=.intel.com,127.0.0.1,localhost
 
