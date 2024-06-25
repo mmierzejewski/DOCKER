@@ -29,4 +29,3 @@ docker run --isolation=hyperv --name container_name -it image_name cmd.exe      
 ### Helples links
 
 * <https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes>
-* <https://towardsdatascience.com/how-to-mount-a-directory-inside-a-docker-container-4cee379c298b>
