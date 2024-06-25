@@ -23,9 +23,9 @@ docker build --no-cache -t image_name:tag .     # Image building without cache
 
 ```
 docker run --name container_name -v host_directory:/container_directory -it image_name /bin/bash  # Run a container with host volume mounting
-docker run --isolation=hyperv --name container_name -it image_name cmd.exe                        # Run a container in a Windows environment.
+docker run --isolation=hyperv --name container_name -it image_name cmd.exe                        # Run a container in a Windows environment
 ```
 
-### Helples links
+### Helpful links
 
 * <https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes>
