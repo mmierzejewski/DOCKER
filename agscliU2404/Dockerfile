@@ -57,7 +57,6 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
     cd ${APP_DIR} && \
     pip install --upgrade pip && \
     pip install -r requirements.txt && \
-    rm -f requirements312.txt && \
 # Alias
     echo 'alias ags="python3 ${APP_DIR}/ags"' >> ~/.bashrc && \
     echo 'alias mmierzex="bash ${APP_DIR}/mmierzex.sh"' >> ~/.bashrc && \
