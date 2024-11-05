@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     USER_HOME_DIR=/work \
     APP_DIR=/app \
     EC_SITE=igk \
-    PYTHON_VERSION=3.12.6 \
+    PYTHON_VERSION=3.12.7 \
 # Intel proxy
     http_proxy=http://proxy-dmz.intel.com:912 \
     https_proxy=http://proxy-dmz.intel.com:912 \
