@@ -27,6 +27,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
     libpam-krb5 \
     gcc \
     libkrb5-dev \
+    htop \
     net-tools \
     wget \
     libssl-dev \
