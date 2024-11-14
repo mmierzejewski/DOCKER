@@ -13,7 +13,6 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
         wget \
         mc \
         gcc && \
-
 # Cleaning
     rm -rf /var/lib/apt/lists/* \
 
