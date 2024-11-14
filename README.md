@@ -4,10 +4,10 @@ Docker tips
 ### Docker images/container commands
 
 ```
-docker images -a                                # Docker image listing (all)
-docker rmi -f image_name1 image_name2           # Deleting images with force
-docker ps -a                                    # Docker container listing (all)
-docker system prune -a                          # Purging all anused or dangling images, containers, volumes, and networks
+docker images -a                                # Docker image listing (all); alias di
+docker rmi -f image_name1 image_name2           # Deleting images with force; alias drmi
+docker ps -a                                    # Docker container listing (all); alias dps
+docker system prune -a                          # Purging all anused or dangling images, containers, volumes, and networks; alias dprune
 docker start container_id/name                  # Starting container
 docker stop container_id/name                   # Stoping container
 docker exec -it container_id/name /bin/bash     # Execute a running container
