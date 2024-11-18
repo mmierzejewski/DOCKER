@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     APP_DIR=/app \
     EC_SITE=igk \
     PYTHON_VERSION=3.10.15 \
+    CERT_FILE=/etc/ssl/certs/ca-certificates.crt \
 # Intel proxy
     http_proxy=http://proxy-dmz.intel.com:912 \
     https_proxy=http://proxy-dmz.intel.com:912 \
