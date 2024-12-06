@@ -1,4 +1,4 @@
-FROM ubuntu2404python310:latest
+FROM harbor.pact.intel.com/common/ags-cli:u2204p310
 ENV DEBIAN_FRONTEND=noninteractive \
     USER_HOME_DIR=/work \
     APP_DIR=/app \
