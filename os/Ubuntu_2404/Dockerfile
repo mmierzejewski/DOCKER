@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive \
-    PYTHON_VERSION=3.10.15 \
+    PYTHON_VERSION=3.10.16 \
 # Intel proxy
     http_proxy=http://proxy-dmz.intel.com:912 \
     https_proxy=http://proxy-dmz.intel.com:912 \
