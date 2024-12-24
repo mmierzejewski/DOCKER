@@ -1,4 +1,5 @@
-FROM harbor.pact.intel.com/common/ags-cli:u2404p31015
+# FROM harbor.pact.intel.com/common/ags-cli:u2404p31015
+FROM u2404p31016:latest
 ENV DEBIAN_FRONTEND=noninteractive \
     USER_HOME_DIR=/work \
     APP_DIR=/app \
