@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHON_VERSION=3.10.16 \
-# Intel proxy
+    # Intel proxy
     http_proxy=http://proxy-dmz.intel.com:912 \
     https_proxy=http://proxy-dmz.intel.com:912 \
     no_proxy=.intel.com,127.0.0.1,localhost
@@ -31,7 +31,7 @@ RUN apt-get -yqq update && apt-get -yqq upgrade && \
     libffi-dev \
     liblzma-dev && \
     rm -rf /var/lib/apt/lists/* && \
-# Download and install Python
+    # Download and install Python
     wget https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tgz && \
     tar -xvf Python-${PYTHON_VERSION}.tgz && \
     cd Python-${PYTHON_VERSION} && \
